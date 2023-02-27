@@ -8,8 +8,13 @@ namespace AutoInspection
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
+
+            Console.ReadKey();
+            Console.Clear();
+            Main();
         }
+
     }
 }
