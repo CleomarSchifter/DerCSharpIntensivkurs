@@ -10,13 +10,13 @@ namespace AutoInspection
     {
         static void Main()
         {
-            string[] carNames = new string[6];
-            carNames[0] = "Mercedes G";
-            carNames[1] = "Audi A8";
-            carNames[2] = "BMW 3";
-            carNames[3] = "Audi A6";
-            carNames[4] = "Hyundai";
-            carNames[5] = "Toyota";
+            Car[] cars = new Car[6];
+            cars[0] = new Car();
+            cars[1] = new Car();
+            cars[2] = new Car();
+            cars[3] = new Car();
+            cars[4] = new Car();
+            cars[5] = new Car();
 
             Console.WriteLine("Bitte geben Sie einen Suchbegriff ein: ");
 
@@ -26,9 +26,9 @@ namespace AutoInspection
 
             Console.WriteLine("Folgende Autos wurden gefunden: ");
 
-            foreach (string car in carNames)
+            foreach (Car car in cars)
             {
-                if(car.Contains(searchTerm))
+                if(car.carName.Contains(searchTerm))
                 Console.WriteLine(car);
             }
 
