@@ -28,6 +28,7 @@ namespace AutoInspection
 
             foreach (string car in carNames)
             {
+                if(car.Contains(searchTerm))
                 Console.WriteLine(car);
             }
 
